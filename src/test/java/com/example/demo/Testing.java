@@ -12,4 +12,14 @@ public class Testing {
         System.out.println(a);
         System.out.println(b);
     }
+
+    @Test
+    public void builder() {
+        BuilderExample a = new BuilderExample.Builder()
+                .one("one")
+                .two("two")
+                .three("three")
+                .build();
+        System.out.println(a.getOne());
+    }
 }
